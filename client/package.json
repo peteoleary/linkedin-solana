@@ -7,17 +7,32 @@
     "@fortawesome/fontawesome-free-brands": "^5.0.9",
     "@fortawesome/fontawesome-free-solid": "^5.0.9",
     "@fortawesome/react-fontawesome": "^0.0.18",
+    "@solana/wallet-adapter-base": "^0.9.3",
+    "@solana/wallet-adapter-react": "^0.15.3",
+    "@solana/wallet-adapter-react-ui": "^0.9.5",
+    "@solana/wallet-adapter-wallets": "^0.15.4",
+    "@solana/web3.js": "^1.35.0",
     "lodash": "^4.17.21",
-    "react": "^16.3.0",
+    "npm-watch": "^0.11.0",
+    "react": "^17.0.2",
     "react-dom": "^16.3.0",
     "react-s-alert": "^1.4.1",
     "react-scripts": "^3.4.1"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch": "npm-watch"
   },
   "engines": {
     "node": ">6.0.0",
